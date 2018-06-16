@@ -1,47 +1,47 @@
-@import "../../assets/styles/config.scss";
+@import '../../assets/styles/config';
 
 .host-header {
-	background-color: $header-background;
-	position: absolute;
-	display: block;
-	height: 70px;
-	top: 0;
-	left: 0;
-	right: 0;
-	user-select: none;
-	
-	.left-part, .right-part{
-		display: flex;
-		align-items: center;
-		height: 100%;
-	}
-	
-	.left-part{
-		float: left;
-		font-size: 32px;
-		font-weight: normal;
-		padding-left: 15%;
-	}
-	
-	.right-part{
-		float: right;
-		font-size: 28px;
-		font-weight: lighter;
-		padding-right: 15%;
-		
-		> * {
-			padding: 0 42px;
-			height: 100%;
-			display: flex;
-			align-items: center;
-			transition: all 0.3s;
-			cursor: pointer;
-			
-			&:hover{
-				background-color: darken($header-background,10%);
-				font-size: 30px
-			}
-		}
-	}
-	
+  background-color: $header-background;
+  position: absolute;
+  display: block;
+  height: 70px;
+  top: 0;
+  left: 0;
+  right: 0;
+  user-select: none;
+
+  .left-part,
+  .right-part {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .left-part {
+    float: left;
+    font-size: 32px;
+    font-weight: normal;
+    padding-left: 15%;
+  }
+
+  .right-part {
+    float: right;
+    font-size: 28px;
+    font-weight: lighter;
+    padding-right: 15%;
+
+    > * {
+      padding: 0 42px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($header-background, 10%);
+        font-size: 30px
+      }
+    }
+  }
 }
